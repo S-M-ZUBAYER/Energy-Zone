@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Ring Push Ups ",
+        "img": "./pictures/Ring Push Ups.jpg",
+        "description": "add even more instability and need for core control by switching from a ball to rings, hanging just a few inches off the ground.",
+        "age": "20-25",
+        "time": 15
+    },
+    {
+        "name": "Half-Get Ups",
+        "img": "./pictures/Half-Get Ups.jpg",
+        "description": "Lay flat on your back on the floor with a barbell pressed up in a bench press position.  Now, sit straight up and press the barbell overhead. It’s good to have your feet locked into something for this.",
+        "age": "20-25",
+        "time": 20
+    },
+    {
+        "name": "Jumping Lunges",
+        "img": "./pictures/Jumping Lunges.jpg",
+        "description": "This is your basic lunge, but adding the challenge of jumping directly up from the kneeling position and then alternating legs in the air!",
+        "age": "20-25",
+        "time": 10
+    },
+    {
+        "name": "Nordic Ball Toss ",
+        "img": "./pictures/Nordic Ball Toss.jpg",
+        "description": "Ideally done with four people.  Two people face each other in Nordic Hamstring Position while partners hold their feet. Now they throw a medicine ball to each other as they drop down to the ground.  Really gives you an incentive to get back up ASAP!",
+        "age": "20-25",
+        "time": 30
+    },
+    {
+        "name": "Goblet Step Ups ",
+        "img": "./pictures/Goblet Step Ups.jpg",
+        "description": "Hold that same KB or DB in the goblet position while performing box step ups.  Just do your meniscus a favor-no weighted box jumps please!",
+        "age": "20-25",
+        "time": 20
+    },
+    {
+        "name": "Side planks",
+        "img": "./pictures/Side planks.jpg",
+        "description": "Side planks work the deep spinal stabilizing muscle quadratus lumborum . Keeping this muscle strong can help reduce your risk of a back injury. Strengthens your core without stressing your back. Unlike crunches and situps, side planks dont put pressure on your lower back",
+        "age": "20-40",
+        "time": 30
+    },
+    {
+        "name": "Cycling",
+        "img": "./pictures/Cycling.jpg",
+        "description": "increased cardiovascular fitness. increased muscle strength and flexibility.improved joint mobility. ",
+        "age": "20-50",
+        "time": 25
+    },
+    {
+        "name": "Swimming",
+        "img": "./pictures/Swimming.jpg",
+        "description": "keeps your heart rate up but takes some of the impact stress off your body.builds endurance, muscle strength and cardiovascular fitness.",
+        "age": "20-25",
+        "time": 45
+    },
+    {
+        "name": "Run",
+        "img": "./pictures/Run.jpg",
+        "description": "help to build strong bones, as it is a weight bearing exercise. strengthen muscles. improve cardiovascular fitness. burn plenty of kilojoules.help maintain a healthy weight.",
+        "age": "35-50",
+        "time": 55
+    },
+    {
+        "name": "Chest up-down",
+        "img": "./pictures/Chest up-down.jpg",
+        "description": "1. Increases muscle thickness · 2. Contributes to upper-body strength output · 3. Improves posture.",
+        "age": "30-50",
+        "time": 50
+    },
+    {
+        "name": "Weight Lifting",
+        "img": "./pictures/Weight Lifting.jpg",
+        "description": "Strength training can help you manage or lose weight, and it can increase your metabolism to help you burn more calories. Enhance your quality of life. Strength training may enhance your quality of life and improve your ability to do everyday activities.",
+        "age": "15-30",
+        "time": 40
+    },
+    {
+        "name": "Dumble",
+        "img": "./pictures/Dumble.jpg",
+        "description": "If you feel like you can keep going after 12-15 repetitions of one exercise with dumbbells, your weight is too light. The goal is that you should barely be able to finish the last repetition.",
+        "age": "20-25",
+        "time": 30
+    }
+]
