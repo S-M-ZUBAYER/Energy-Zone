@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import img from "../../img/Zubayer.jpg"
-const Status = () => {
+const Status = ({ totalTime }) => {
+    // const breakTimer = (event) => {
+    //     console.log(event.target.innerText)
+    // }
+
+
     return (
         <div className="text-center mt-5">
             <div className=" mb-5">
@@ -34,13 +39,13 @@ const Status = () => {
                 <button className="btn btn-outline btn-info rounded-full">50s</button>
             </div>
 
-            <h1 className="text-xl font-bold m-3">Exercise Details</h1>
+            <h1 className="text-xl font-bold m-3">Exercise Details : {totalTime}</h1>
             <label className="input-group input-group-md mb-3">
                 <span className='w-1/2'>Exercise Time: </span>
                 <input type="text" placeholder="00 seconds" className="input input-bordered input-md w-1/2" />
             </label>
             <label className="input-group input-group-md mb-5">
-                <span className='w-1/2'>Break Time</span>
+                <span className='w-1/2'>Break Time:</span>
                 <input type="text" placeholder="00 seconds" className="input input-bordered input-md w-1/2" />
             </label>
             <button className="btn btn-active btn-secondary w-full">Activities Completed</button>
