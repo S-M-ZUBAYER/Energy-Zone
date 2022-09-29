@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Status = ({ totalTime }) => {
     let [time, setTime] = useState(0)
+
     const breakTime = (event) => {
         const breakTime = event.target.textContent;
         const time = breakTime.slice(0, breakTime.length - 1);
@@ -20,8 +21,9 @@ const Status = ({ totalTime }) => {
         const getTimeFromDB = getElement('Break');
         setTime(getTimeFromDB);
     }, [])
-    const showToastMessage = () => {
-        toast.success("Wow!!! Today's Activities Completed", {
+    const showToastMessage = (e) => {
+        e.target.style.background = '#7FFF00';
+        toast.success("Wow!!! Today's Activities Completed...", {
             position: toast.POSITION.TOP_CENTER
         });
     };
@@ -40,38 +42,38 @@ const Status = ({ totalTime }) => {
             </div>
             <div className=" flex justify-around bg-slate-600 p-2  rounded-lg">
                 <div>
-                    <h2 className="text-2xl font-semibold">77kg</h2>
+                    <h2 className="md:text-2xl sm:text-xl font-semibold">77 <small className="font-normal">kg</small></h2>
                     <p>Weight</p>
                 </div>
                 <div>
-                    <h2 className="text-2xl font-semibold">5.9 Inch</h2>
+                    <h2 className="md:text-2xl sm:text-xl font-semibold">5.9 <small className="font-normal">Inch</small></h2>
                     <p>Height</p>
                 </div>
                 <div>
-                    <h2 className="text-2xl font-semibold">26 Years</h2>
+                    <h2 className="md:text-2xl sm:text-xl font-semibold">26 <small className="font-normal">Years</small></h2>
                     <p>Age</p>
                 </div>
             </div>
             <h1 className="text-xl font-bold m-3">Add A Break</h1>
 
-            <div className="  bg-slate-600 p-3  rounded-lg flex justify-around">
-                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">10s</button>
+            <div className="  bg-slate-600 p-3 rounded-lg flex justify-around">
+                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline md:text-lg sm:text-sm btn-info rounded-full">10s</button>
                 <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">20s</button>
                 <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">30s</button>
                 <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">40s</button>
-                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">50s</button>
+                {/* <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">50s</button> */}
             </div>
 
 
             <h1 className="text-xl font-bold m-3">Exercise Details :</h1>
             <div className="bg-slate-600 p-3 my-5 rounded-lg">
-                <h3 className='font-bold text-start px-3'>Exercise Time: <span className="font-medium ml-14">{totalTime} seconds</span></h3>
+                <h3 className='font-bold text-start px-3'>Exercise Time: <span className="font-medium  md:ml-14 sm:ml-3">{totalTime} minutes</span></h3>
             </div>
             <div className="bg-slate-600 p-3 my-5 rounded-lg">
-                <h3 className='font-bold text-start px-3'>Break Time: <span className="font-medium ml-20">{time} seconds</span></h3>
+                <h3 className='font-bold text-start px-3'>Break Time: <span className="font-medium md:ml-20 sm:ml-3">{time} seconds</span></h3>
             </div>
 
-            <button onClick={showToastMessage} className="btn btn-active btn-secondary w-full">Activities Completed</button>
+            <button onClick={(e) => showToastMessage(e)} className="btn btn-active btn-secondary w-full">Activities Completed</button>
             <ToastContainer />
         </div>
     );

@@ -15,7 +15,9 @@ const Display = () => {
 
     let [totalTime, setTotalTime] = useState(0)
 
-    const exerciseTimer = (time) => {
+    const exerciseTimer = (time, e) => {
+        e.target.innerText = "Added";
+        e.target.style.background = '#8FBC8F'
         totalTime = totalTime + time;
         setElement('ExerciseTime', totalTime);
         setTotalTime(totalTime);

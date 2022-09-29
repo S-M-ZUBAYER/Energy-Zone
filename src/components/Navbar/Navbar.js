@@ -6,10 +6,10 @@ import img from "../../img/th.jpg"
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 bg-violet-500">
+            <div className="navbar bg-base-100 bg-slate-900">
                 <div className="flex-1">
                     <div>
-                        <a href='./' className="btn btn-ghost normal-case text-xl"><FontAwesomeIcon icon={faDumbbell} className="mr-4 text-black text-5xl"></FontAwesomeIcon>Energy Zone</a>
+                        <a href='./' className="btn btn-ghost normal-case text-xl"><FontAwesomeIcon icon={faDumbbell} className="mr-4 text-slate-400 text-5xl"></FontAwesomeIcon>Energy Zone</a>
                     </div>
                 </div>
 
