@@ -8,6 +8,8 @@ const Navbar = () => {
         <div>
             <div className="navbar bg-base-100 bg-slate-900">
                 <div className="flex-1">
+
+                    {/* add icon in navbar */}
                     <div>
                         <a href='./' className="btn btn-ghost normal-case text-xl"><FontAwesomeIcon icon={faDumbbell} className="mr-4 text-slate-400 text-5xl"></FontAwesomeIcon>Energy Zone</a>
                     </div>

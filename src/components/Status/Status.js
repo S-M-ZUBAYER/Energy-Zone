@@ -7,6 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Status = ({ totalTime }) => {
+
+    // create function to add all activities time and show in status section
     let [time, setTime] = useState(0)
 
     const breakTime = (event) => {
@@ -16,7 +18,7 @@ const Status = ({ totalTime }) => {
         setTime(time);
     }
 
-    // let [exerciseTime, setExerciseTime] = useState(0)
+    // create function to get and set time from local storage to show in status section
     useEffect(() => {
         const getTimeFromDB = getElement('Break');
         setTime(getTimeFromDB);
@@ -27,10 +29,7 @@ const Status = ({ totalTime }) => {
             position: toast.POSITION.TOP_CENTER
         });
     };
-    // useEffect(() => {
-    //     let ExerciseTimeFromDB = getElement('ExerciseTime');
-    //     setExerciseTime(ExerciseTimeFromDB);
-    // }, [totalTime])
+
     return (
         <div className="text-center mt-5 sticky top-0">
             <div className=" mb-5">
@@ -57,14 +56,13 @@ const Status = ({ totalTime }) => {
             <h1 className="text-xl font-bold m-3">Add A Break</h1>
 
             <div className="  bg-slate-600 p-3 rounded-lg flex justify-around">
-                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline md:text-lg sm:text-sm btn-info rounded-full">10s</button>
                 <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">20s</button>
                 <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">30s</button>
                 <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">40s</button>
-                {/* <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">50s</button> */}
+                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">50s</button>
             </div>
 
-
+            {/* display the information */}
             <h1 className="text-xl font-bold m-3">Exercise Details :</h1>
             <div className="bg-slate-600 p-3 my-5 rounded-lg">
                 <h3 className='font-bold text-start px-3'>Exercise Time: <span className="font-medium  md:ml-14 sm:ml-3">{totalTime} minutes</span></h3>

@@ -3,7 +3,7 @@ const Exercise = ({ exercise, handler }) => {
 
 
     return (
-
+        // set all the information in each card
         <div className="card w-64 bg-gray-600 bg-base-100 shadow-xl ">
             <figure className="px-2 pt-2">
                 <img src={img} alt="Shoes" className="rounded-xl" />

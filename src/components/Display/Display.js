@@ -26,10 +26,12 @@ const Display = () => {
     return (
         <div>
             <div className='display'>
+                {/* Daily activities part */}
                 <div className="mx-auto ">
                     <Activities activities={activities} handler={exerciseTimer}></Activities>
-
                 </div>
+
+                {/* status to show the some information */}
                 <div className="status mr-4 mb-5">
                     <Status totalTime={totalTime}></Status>
                 </div>

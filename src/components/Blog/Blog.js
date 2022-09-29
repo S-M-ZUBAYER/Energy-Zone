@@ -3,9 +3,11 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className="w-[80%] mx-auto my-10">
+
+            {/* 1 No question ans */}
             <div tabIndex={0} className="collapse collapse-arrow border bg-gray-600 border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
-                    How does React work?
+                    1. How does React work?
                 </div>
                 <div className="collapse-content text-left">
                     <p className="font-semibold">React creates a VIRTUAL DOM in memory:-</p>
@@ -14,9 +16,11 @@ const Blog = () => {
                     <p>React finds out what changes have been made, and changes only what needs to be changed.</p>
                 </div>
             </div>
+
+            {/* 2 No question ans */}
             <div tabIndex={0} className="collapse collapse-arrow   bg-gray-600 border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
-                    What are the difference between State and Props?
+                    2. What are the difference between State and Props?
                 </div>
                 <div className="collapse-content">
                     <div className="overflow-x-auto">
@@ -63,9 +67,11 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
+
+            {/* 3 No question ans */}
             <div tabIndex={0} className="collapse collapse-arrow   bg-gray-600 border border-base-300 bg-base-100 rounded-box mb-12">
                 <div className="collapse-title text-xl font-medium">
-                    Apart from the data load, what else dose the useEffect do?
+                    3. Apart from the data load, what else dose the useEffect do?
                 </div>
                 <div className="collapse-content text-left">
                     <p>1.Running on state change: validating input field</p>

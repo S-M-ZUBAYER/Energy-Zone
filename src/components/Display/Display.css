@@ -4,7 +4,7 @@
 }
 
 
-
+/* make responsive */
 @media(max-width: 900px) {
     .display {
         display: flex;
