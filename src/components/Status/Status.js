@@ -5,12 +5,16 @@ import img from "../../img/Zubayer.jpg"
 import { getElement, setElement } from '../../utilities/LocalDB';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const Status = ({ totalTime }) => {
     let [time, setTime] = useState(0)
     const breakTime = (event) => {
-        setElement('Break', event);
-        setTime(event);
+        const breakTime = event.target.textContent;
+        const time = breakTime.slice(0, breakTime.length - 1);
+        setElement('Break', time);
+        setTime(time);
     }
+
     // let [exerciseTime, setExerciseTime] = useState(0)
     useEffect(() => {
         const getTimeFromDB = getElement('Break');
@@ -51,11 +55,11 @@ const Status = ({ totalTime }) => {
             <h1 className="text-xl font-bold m-3">Add A Break</h1>
 
             <div className="  bg-slate-600 p-3  rounded-lg flex justify-around">
-                <button onClick={() => { breakTime(10) }} className="btn btn-outline btn-info rounded-full">10s</button>
-                <button onClick={() => { breakTime(20) }} className="btn btn-outline btn-info rounded-full">20s</button>
-                <button onClick={() => { breakTime(30) }} className="btn btn-outline btn-info rounded-full">30s</button>
-                <button onClick={() => { breakTime(40) }} className="btn btn-outline btn-info rounded-full">40s</button>
-                <button onClick={() => { breakTime(50) }} className="btn btn-outline btn-info rounded-full">50s</button>
+                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">10s</button>
+                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">20s</button>
+                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">30s</button>
+                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">40s</button>
+                <button onClick={(e) => { breakTime(e) }} className="btn btn-outline btn-info rounded-full">50s</button>
             </div>
 
 
