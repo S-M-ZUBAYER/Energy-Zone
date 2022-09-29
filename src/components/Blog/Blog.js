@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className="w-[80%] mx-auto my-10">
-            <div tabIndex={0} className="collapse collapse-arrow border bg-slate-600 border-base-300 bg-base-100 rounded-box">
+            <div tabIndex={0} className="collapse collapse-arrow border bg-gray-600 border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                     How does React work?
                 </div>
@@ -14,7 +14,7 @@ const Blog = () => {
                     <p>React finds out what changes have been made, and changes only what needs to be changed.</p>
                 </div>
             </div>
-            <div tabIndex={0} className="collapse collapse-arrow  bg-slate-600 border border-base-300 bg-base-100 rounded-box">
+            <div tabIndex={0} className="collapse collapse-arrow   bg-gray-600 border border-base-300 bg-base-100 rounded-box">
                 <div className="collapse-title text-xl font-medium">
                     What are the difference between State and Props?
                 </div>
@@ -63,7 +63,7 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            <div tabIndex={0} className="collapse collapse-arrow  bg-slate-600 border border-base-300 bg-base-100 rounded-box mb-12">
+            <div tabIndex={0} className="collapse collapse-arrow   bg-gray-600 border border-base-300 bg-base-100 rounded-box mb-12">
                 <div className="collapse-title text-xl font-medium">
                     Apart from the data load, what else dose the useEffect do?
                 </div>

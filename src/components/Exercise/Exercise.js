@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-
 const Exercise = ({ exercise, handler }) => {
     const { name, img, description, age, time } = exercise;
 
 
     return (
 
-        <div className="card w-64  bg-slate-600 bg-base-100 shadow-xl ">
+        <div className="card w-64 bg-gray-600 bg-base-100 shadow-xl ">
             <figure className="px-2 pt-2">
                 <img src={img} alt="Shoes" className="rounded-xl" />
             </figure>
