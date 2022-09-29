@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import img from "../../img/Zubayer.jpg"
 const Status = ({ totalTime }) => {
-    // const breakTimer = (event) => {
-    //     console.log(event.target.innerText)
-    // }
-
-
+    const breakTime = (event) => {
+        console.log(event)
+    }
     return (
         <div className="text-center mt-5">
             <div className=" mb-5">
@@ -32,22 +30,22 @@ const Status = ({ totalTime }) => {
             <h1 className="text-xl font-bold m-3">Add A Break</h1>
 
             <div className="  bg-slate-600 p-3  rounded-lg flex justify-around">
-                <button className="btn btn-outline btn-info rounded-full">10s</button>
+                <button onClick={() => { breakTime(this.innerText) }} className="btn btn-outline btn-info rounded-full">10s</button>
                 <button className="btn btn-outline btn-info rounded-full">20s</button>
                 <button className="btn btn-outline btn-info rounded-full">30s</button>
                 <button className="btn btn-outline btn-info rounded-full">40s</button>
                 <button className="btn btn-outline btn-info rounded-full">50s</button>
             </div>
 
-            <h1 className="text-xl font-bold m-3">Exercise Details : {totalTime}</h1>
-            <label className="input-group input-group-md mb-3">
-                <span className='w-1/2'>Exercise Time: </span>
-                <input type="text" placeholder="00 seconds" className="input input-bordered input-md w-1/2" />
-            </label>
-            <label className="input-group input-group-md mb-5">
-                <span className='w-1/2'>Break Time:</span>
-                <input type="text" placeholder="00 seconds" className="input input-bordered input-md w-1/2" />
-            </label>
+
+            <h1 className="text-xl font-bold m-3">Exercise Details :</h1>
+            <div className="bg-slate-600 p-3 my-5 rounded-lg">
+                <h3 className='font-bold text-start px-3'>Exercise Time: <span className="font-medium ml-28">{totalTime} seconds</span></h3>
+            </div>
+            <div className="bg-slate-600 p-3 my-5 rounded-lg">
+                <h3 className='font-bold text-start px-3'>Break Time: <span className="font-medium ml-32">{totalTime} seconds</span></h3>
+            </div>
+
             <button className="btn btn-active btn-secondary w-full">Activities Completed</button>
         </div>
     );

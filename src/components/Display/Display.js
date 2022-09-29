@@ -10,11 +10,11 @@ const Display = () => {
             .then(res => res.json())
             .then(data => setActivities(data))
     }, [])
+    let [totalTime, setTotalTime] = useState(0)
 
-    let totalExerciseTime = 0;
     const exerciseTimer = (time) => {
-        totalExerciseTime = totalExerciseTime + time;
-        console.log(totalExerciseTime)
+        totalTime = totalTime + time;
+        setTotalTime(totalTime);
     }
     return (
         <div className='display'>
@@ -23,7 +23,7 @@ const Display = () => {
 
             </div>
             <div className='border-gray-500'>
-                <Status totalTime={totalExerciseTime}></Status>
+                <Status totalTime={totalTime}></Status>
             </div>
         </div>
     );
