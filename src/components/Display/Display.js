@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { setElement } from '../../utilities/LocalDB';
 import Activities from '../Activities/Activities';
+import Blog from '../Blog/Blog';
 import Status from '../Status/Status';
 import "./Display.css"
 
@@ -21,14 +22,20 @@ const Display = () => {
     }
 
     return (
-        <div className='display'>
-            <div className="mx-auto ">
-                <Activities activities={activities} handler={exerciseTimer}></Activities>
+        <div>
+            <div className='display'>
+                <div className="mx-auto ">
+                    <Activities activities={activities} handler={exerciseTimer}></Activities>
 
+                </div>
+                <div className="status mr-4 mb-5">
+                    <Status totalTime={totalTime}></Status>
+                </div>
             </div>
-            <div className="status mr-4">
-                <Status totalTime={totalTime}></Status>
+            <div>
+                <Blog></Blog>
             </div>
+
         </div>
     );
 };
