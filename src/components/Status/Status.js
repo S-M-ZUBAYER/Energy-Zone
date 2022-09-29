@@ -3,6 +3,8 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import img from "../../img/Zubayer.jpg"
 import { getElement, setElement } from '../../utilities/LocalDB';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Status = ({ totalTime }) => {
     let [time, setTime] = useState(0)
     const breakTime = (event) => {
@@ -14,14 +16,19 @@ const Status = ({ totalTime }) => {
         const getTimeFromDB = getElement('Break');
         setTime(getTimeFromDB);
     }, [])
+    const showToastMessage = () => {
+        toast.success("Wow!!! Today's Activities Completed", {
+            position: toast.POSITION.TOP_CENTER
+        });
+    };
     // useEffect(() => {
     //     let ExerciseTimeFromDB = getElement('ExerciseTime');
     //     setExerciseTime(ExerciseTimeFromDB);
     // }, [totalTime])
     return (
-        <div className="text-center mt-5 ">
+        <div className="text-center mt-5 sticky top-0">
             <div className=" mb-5">
-                <div className="ml-36">
+                <div className="ml-[45%]">
                     <img className='rounded-full w-14 h-14' src={img} alt='' />
                 </div>
                 <h3 className='mt-2'>S M Zubayer</h3>
@@ -60,7 +67,8 @@ const Status = ({ totalTime }) => {
                 <h3 className='font-bold text-start px-3'>Break Time: <span className="font-medium ml-20">{time} seconds</span></h3>
             </div>
 
-            <button className="btn btn-active btn-secondary w-full">Activities Completed</button>
+            <button onClick={showToastMessage} className="btn btn-active btn-secondary w-full">Activities Completed</button>
+            <ToastContainer />
         </div>
     );
 };

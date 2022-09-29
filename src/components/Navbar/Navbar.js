@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
-import img from "../../img/Zubayer.jpg"
+import img from "../../img/th.jpg"
 
 const Navbar = () => {
     return (
@@ -15,7 +15,7 @@ const Navbar = () => {
 
                 <div className="flex-none gap-2">
 
-                    <div className="dropdown dropdown-end">
+                    <div className="dropdown dropdown-end mr-5">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
                                 <img src={img} alt='' />

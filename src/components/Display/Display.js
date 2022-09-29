@@ -22,11 +22,11 @@ const Display = () => {
 
     return (
         <div className='display'>
-            <div className=''>
+            <div className="mx-auto ">
                 <Activities activities={activities} handler={exerciseTimer}></Activities>
 
             </div>
-            <div className="mr-4">
+            <div className="status mr-4">
                 <Status totalTime={totalTime}></Status>
             </div>
         </div>

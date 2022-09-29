@@ -2,3 +2,19 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
+
+
+
+@media(max-width: 900px) {
+    .display {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .status {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
