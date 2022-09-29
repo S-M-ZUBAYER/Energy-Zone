@@ -16,7 +16,7 @@ const Exercise = ({ exercise, handler }) => {
                 <p className="font-semibold">For age: {age}</p>
                 <p className="font-semibold">Time Requirement: {time} minutes</p>
                 <div className="card-actions">
-                    <button onClick={() => { handler(time) }} className="btn btn-error">Add To list</button>
+                    <button onClick={() => { handler(time) }} className="btn btn-error w-64">Add To list</button>
                     <button onClick={() => { handler(time) }} className="btn btn-info hidden">Add To list</button>
                 </div>
             </div>
